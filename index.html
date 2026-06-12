@@ -1,47 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site no GitHub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f9;
-        }
-        .container {
-            text-align: center;
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h1 { color: #333; }
-        p { color: #666; }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #2ea44f;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+    <title>AgroFeira - Do Campo para sua Mesa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Olá, Mundo! 🚀</h1>
-        <p>Este é o meu primeiro site hospedado no GitHub Pages.</p>
-        <a href="https://github.com/seu-usuario" class="btn">Ver meu perfil</a>
-    </div>
+    <header class="navbar">
+        <div class="logo">🌱 Agro<span>Feira</span></div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Sobre o Projeto</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Rastreie a origem do seu alimento</h1>
+            <p>Conectando a tecnologia do Front-End ao coração da agricultura familiar.</p>
+            <button class="btn-principal">Ver Produtores</button>
+        </div>
+    </section>
+
+    <section id="produtos" class="container">
+        <h2>Produtos da Época</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Orgânicos do Sítio</h3>
+                <p>Produtor: Seu João - Alface e Tomate 100% livres de agrotóxicos.</p>
+                <span class="tag">Paraná</span>
+            </div>
+            <div class="card">
+                <h3>Mel Puro de Abelha</h3>
+                <p>Produtora: Dona Maria - Produção sustentável e proteção às abelhas.</p>
+                <span class="tag">Sustentável</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Projeto Agrinho - Desenvolvido com foco em Sustentabilidade.</p>
+    </footer>
 
 </body>
 </html>
